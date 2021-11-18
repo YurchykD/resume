@@ -1,0 +1,32 @@
+@keyframes border {
+    0% {
+        background: skyblue;
+    }
+    50% {
+        background: rgb(255, 187, 40);
+    }
+    100% {
+        background: skyblue;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        margin-top: 5px;
+    }
+    15% {
+        margin-bottom: 5px;
+    }
+    25% {
+        margin-bottom: 15px;
+    }
+    50% {
+        margin-bottom: 20px;
+    }
+    75% {
+        margin-bottom: 25px;
+    }
+    100% {
+        margin-bottom: 30px;
+    }
+}

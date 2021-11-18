@@ -1,0 +1,77 @@
+.menu {
+    display: none;
+    position: fixed;
+    padding: 0 40px;
+    height: 100%;
+    width: 300px;
+    left: -100%;
+    top: 0;
+    z-index: 3;
+    background: #2e2e2e;
+    transition: left 0.3s linear;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        display: block;
+        width: 150px;
+    }
+
+    &__hamburger {
+        margin-top: 80px;
+        margin-bottom: 25px;
+        width: 20px;
+        height: 14px;
+        background-image: url(./src/images/menu-active.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    &__item {
+        overflow-y: hidden;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        margin-bottom: 25px;
+        transition: transform 0.2s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__social {
+        &-link {
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+        &-img {
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 25px;
+            height: 25px;
+            transition: transform 0.2s linear;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.menu--active {
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        display: block;
+        overflow-y: hidden;
+        top: 0px;
+        left: 0;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        display: none;
+    }
+}

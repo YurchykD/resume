@@ -1,0 +1,15 @@
+.resume {
+    margin: 230px auto 0;
+    max-width: 1440px;
+    border: 2px solid gray;
+    background-color: white;
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        max-width: 720px;
+    }
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin: 130px auto 0;
+        max-width: 320px;
+    }
+}

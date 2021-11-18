@@ -1,0 +1,139 @@
+.section {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #e9e9e9;
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        max-width: 100%;
+    }
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    &__photo {
+        box-sizing: border-box;
+        object-fit: cover;
+        padding: 60px 0 40px;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s linear;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+
+            @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+                transform: scale(1.1);
+            }
+
+            @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__contact {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 27px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__name {
+        font-size: 23px;
+        margin-bottom: 5px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 18px;
+            padding-left: 5px;
+            margin-bottom: 15px;
+        }
+
+        &-link {
+            color: black;
+            transition: color 0.2s linear;
+            word-wrap: break-word;
+
+            @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+                font-size: 18px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                color: rgb(248, 110, 86);
+            }
+        }
+    }
+
+    &__languages {
+        text-align: center;
+        font-size: 27px;
+        margin: 40px 0 40px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 24px;
+            margin: 20px 0 20px;
+        }
+    }
+
+    &__item {
+        line-height: 30px;
+        font-size: 20px;
+        margin-bottom: 5px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 18px;
+        }
+
+        & strong {
+            font-size: 23px;
+
+            @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__hobbies {
+        text-align: center;
+        font-size: 27px;
+        margin: 40px 0 40px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 24px;
+            font-size: 25px;
+            margin: 20px 0 20px;
+        }
+    }
+
+    &__hobby {
+        font-size: 23px;
+        line-height: 35px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &--margin {
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto 90px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 25px;
+    background: linear-gradient(to right, #eee2b2, #ecc17c);
+    color: white;
+    transition: transform 0.3s linear;
+
+    &:hover  {
+        transform: scale(1.1);
+        background: linear-gradient(to right, #eee2b2, #ecc17c);
+    }
+
+    &:hover  &__arrow {
+        color: white;
+        animation: arrow 0.7s infinite alternate;
+    }
+    
+}

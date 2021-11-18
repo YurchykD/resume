@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 20px;
+    background: linear-gradient(to left, #eee2b2, #ecc17c);
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        font-size: 15px;
+    }
+}

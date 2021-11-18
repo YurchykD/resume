@@ -1,0 +1,12 @@
+.main {
+    box-sizing: border-box;
+    display: flex;
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        flex-direction: column;
+    }
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        flex-direction: column;
+    }
+}
